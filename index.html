@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TheBox - Building Things</title>
+  <link rel="stylesheet" href="/css/style.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg bg-white shadow-sm py-1">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="/img/Group1.svg" alt="TheBox Logo" style="height: 60px; margin-right: 8px;">
+        <span class="fw-bold"><i>The</i>Box</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="/img/Hero.png" alt="slide 1" class="d-block w-100 img-fluid"
+            style="height: 100vh; object-fit: cover;">
+
+          <div class="carousel-caption d-none d-md-block text-start">
+            <div class="d-flex align-items-start justify-content-start" style="height: 100vh;">
+              <div class="text-start" style="margin-top: 200px; margin-left: 0px;">
+                <h1 class="text-dark fw-bold display-4">
+                  Building things<br>is our mission.
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="/img/Hero.png" class="d-block w-100 img-fluid" alt="Slide 2"
+            style="height: 100vh; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block text-start">
+            <section class="d-flex align-items-center" style="height: 80vh; padding-left:0rem;">
+              <h1 class="text-dark fw-bold display-4">Design. Develop. Deliver.</h1>
+            </section>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="/img/Hero.png" class="d-block w-100 img-fluid" alt="Slide 3"
+            style="height: 100vh; object-fit: cover;">
+          <div class="carousel-caption d-none d-md-block text-start">
+            <section class="d-flex align-items-center" style="height: 80vh; padding-left:0rem;">
+              <h1 class="text-dark fw-bold display-4">Innovation meets architecture.</h1>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <div class="position-absolute bottom-0 end-0 m-4" style="max-width: 300px; z-index: 10;">
+        <div class="p-3 rounded-top text-white" style="background: linear-gradient(to right, #223a98, #455dd4);">
+          <small class="fw-bold">Feature Projects</small>
+          <div class="fw-normal">The National University of Architecture</div>
+        </div>
+        <div class="bg-dark text-white d-flex justify-content-between align-items-center p-2">
+          <button class="btn btn-link text-white fw-semibold text-decoration-none px-2" data-bs-target="#heroCarousel"
+            data-bs-slide="prev">
+            ← Back
+          </button>
+          <span>|</span>
+          <button class="btn btn-link text-white fw-semibold text-decoration-none px-2" data-bs-target="#heroCarousel"
+            data-bs-slide="next">
+            Next →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Reputation -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Reputation</h2>
+      <div class="row g-4">
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 text-center p-4">
+            <img src="/img/icon13.svg" class="mx-auto mb-3 img-fluid" alt="Best Services"
+              style="width: 40px; height: 40px;">
+            <h5 class="fw-bold">Best Services</h5>
+            <p class="text-muted">Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 text-center p-4">
+            <img src="/img/icon13.svg" class="mx-auto mb-3 img-fluid" alt="Best Teams"
+              style="width: 40px; height: 40px;">
+            <h5 class="fw-bold">Best Teams</h5>
+            <p class="text-muted">Cursus semper tellus volutpat aliquet lacus.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card h-100 text-center p-4">
+            <img src="/img/icon14.svg" class="mx-auto mb-3 img-fluid" alt="Best Designs"
+              style="width: 40px; height: 40px;">
+            <h5 class="fw-bold">Best Designs</h5>
+            <p class="text-muted">Ultricies at ipsum nunc, tristique nam lectus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="position-relative" style="height: 500px;">
+    <!-- Background Image -->
+    <img src="/img/bubuji.svg" alt="About Person"
+      style="height: 100%; width: 80%; object-fit: cover; border-radius: 8px; display: block;">
+
+
+    <!-- Overlay Card -->
+    <div class="position-absolute top-50 end-0 translate-middle-y me-5 p-4 text-white shadow-lg"
+      style="width: 350px; height: 380px; background: linear-gradient(to right, #223a98, #455dd4); z-index: 2;">
+      <h5 class="fw-bold">About us</h5>
+      <p style="font-size: 14px;">
+        For more than 30 years we have been delivering world-class construction and we’ve built many lasting
+        relationships along the way.
+      </p>
+      <p style="font-size: 14px;">
+        We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and
+        reliability when building in the U.S.
+      </p>
+      <a href="#" class="btn btn-light btn-sm fw-semibold mt-2">More on Our History</a>
+    </div>
+  </section>
+
+
+
+
+
+  <section>
+    <div class="container text-center py-5">
+      <h2 class="fw-bold mb-5">Services</h2>
+      <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-center">
+
+        <!-- Service Card -->
+        <div class="col">
+          <div class="p-4 bg-white border rounded shadow-sm h-100">
+            <i class="bi bi-building fs-1 text-dark mb-3 d-block"></i>
+            <img src="/img/icon7.svg" alt="construction" class="img-fluid mb-2">
+            <div class="mx-auto my-2" style="width: 60px; height: 2px; background-color: #e2d9e2;"></div>
+            <h6 class="fw-bold text-primary">Construction</h6>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="bg-primary text-white text-center py-4 h-100"
+            style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+            <i class="bi bi-diagram-3 fs-1 mb-3 d-block"></i>
+            <img src="/img/icon8.svg" alt="renovation" class="img-fluid mb-2">
+            <div class="mx-auto my-2" style="width: 60px; height: 2px; background-color: #e2d9e2;"></div>
+            <h6 class="fw-bold">Renovation</h6>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-4 bg-white border rounded shadow-sm h-100">
+            <i class="bi bi-pencil-square fs-1 text-dark mb-3 d-block"></i>
+            <img src="/img/icon10.svg" alt="consultation" class="img-fluid mb-2">
+            <div class="mx-auto my-2" style="width: 60px; height: 2px; background-color: #e2d9e2;"></div>
+            <h6 class="fw-bold text-primary">Consultation</h6>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="bg-primary text-white text-center py-4 h-100"
+            style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+            <i class="bi bi-tools fs-1 mb-3 d-block"></i>
+            <img src="/img/icon9.svg" alt="repair services" class="img-fluid mb-2">
+            <div class="mx-auto my-2" style="width: 60px; height: 2px; background-color: #e2d9e2;"></div>
+            <h6 class="fw-bold">Repair Services</h6>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-4 bg-white border rounded shadow-sm h-100">
+            <i class="bi bi-rulers fs-1 text-dark mb-3 d-block"></i>
+            <img src="/img/icon11.svg" alt="architecture" class="img-fluid mb-2">
+            <div class="mx-auto my-2" style="width: 60px; height: 2px; background-color: #e2d9e2;"></div>
+            <h6 class="fw-bold text-primary">Architecture</h6>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="bg-primary text-white text-center py-4 h-100"
+            style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+            <i class="bi bi-lightning fs-1 mb-3 d-block"></i>
+            <img src="/img/icon12.svg" alt="electric" class="img-fluid mb-2">
+            <div class="mx-auto my-2" style="width: 60px; height: 2px; background-color: #e2d9e2;"></div>
+            <h6 class="fw-bold">Electric</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- Stats + Experience Section -->
+<section class="py-5" style="background-color: #fff0f0;">
+  <div class="container">
+    <div class="row justify-content-center align-items-start">
+<div class="col-lg-6">
+  <div class="container p-8">
+    <!-- Card 1 - Projects Completed -->
+    <div class="position-relative shadow p-4 rounded bg-white mb-10 ms-auto" style="width: 250px;">
+      <img src="/img/illus2.svg" width="70" class="position-absolute" style="top: -20px; right: -20px;" alt="projects">
+      <h3 class="fw-bold mb-0">84</h3>
+      <p class="mb-0 text-muted fw-semibold"><span class="text-danger">|</span> Happy Clients</p>
+    </div>
+
+    <!-- Card 2 - Happy Clients -->
+    <div class="position-relative shadow p-4 rounded bg-white mb-10" style="width: 250px;">
+      <img src="/img/illus1.svg  " width="70" class="position-absolute" style="top: -20px; left: -40px;" alt="clients">
+      <h3 class="fw-bold mb-0">123</h3>
+      <p class="mb-0 text-muted fw-semibold"><span class="text-danger">|</span> Projects Completed</p>
+    </div>
+
+    <!-- Card 3 - Awards Win -->
+    <div class="position-relative shadow p-4 rounded bg-white mb-10 ms-auto" style="width: 250px;">
+      <img src="/img/illus3.svg" width="70" class="position-absolute" style="top: -20px; right: -20px;" alt="awards">
+      <h3 class="fw-bold mb-0">37</h3>
+      <p class="mb-0 text-muted fw-semibold"><span class="text-danger">|</span> Awards Win</p>
+    </div>
+
+    <!-- Card 4 - Years in Business -->
+    <div class="position-relative shadow p-4 rounded bg-white mb-10" style="width: 250px;">
+      <img src="/img/illus4.svg" width="60" class="position-absolute" style="top: 60px; left: 170px;" alt="years">
+      <h3 class="fw-bold mb-0">30</h3>
+      <p class="mb-0 text-muted fw-semibold"><span class="text-danger">|</span> Years in Business</p>
+    </div>
+  </div>
+</div>
+
+      <!-- Experience Block -->
+      <div class="col-lg-5 mb-10 position:right">
+        <div class="bg-white text-start p-10" style="max-width: 80%;">
+          <h1 class="fw-bold display-6 "style="background: linear-gradient(to right, #223a98, #455dd4);
+               -webkit-background-clip: text; 
+               -webkit-text-fill-color: transparent; 
+               display: inline-block;">
+            30 Years<br>Experience
+          </h1>
+          <p class="text-secondary mt-3 ps-3">
+            Our company has been the leading provider of construction services to clients throughout the USA since 1988.
+          </p>
+          <a href="#" class="btn btn-primary fw-bold px-4 py-2"
+             style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">Contact Us</a>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Consultation CTA Section -->
+  <section class="position-relative text-white text-center text-md-start"
+    style="background: url('/img/unsplashMP0bgaSd1c.svg') center center/cover no-repeat; padding: 60px 0;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <div class="container position-relative z-1">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7 col-12 mb-3 mb-md-0">
+          <h2 class="fw-bold mb-3">Free consultation with exceptional quality</h2>
+          <p class="mb-0">
+            Just one call away:
+            <a href="tel:+8411022703" class="text-white text-decoration-underline">+84 1102 2703</a>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-5 col-12 text-md-end text-center">
+          <a href="#" class="btn btn-outline-light mt-3 mt-md-0 ">Get your consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Carousel Section -->
+  <section class="py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-2 col-md-3 col-12 mb-4 mb-md-0 text-center text-md-start">
+          <h4 class="fw-bold">Projects</h4>
+          <ul class="list-unstyled mt-4">
+            <li><a href="#" class="fw-bold text-primary">All</a></li>
+            <li>Commercial</li>
+            <li>Residential</li>
+            <li>Other</li>
+          </ul>
+        </div>
+
+        <!-- Carousel & Controls -->
+        <div class="col-lg-10 col-md-9 col-12">
+          <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                      <img src="/img/unsplashT0iFfJwrB0.svg" class="card-img-top" alt="...">
+                      <div class="bg-primary text-white text-center py-3"
+                        style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+                        <h5 class="card-title">Wildstone Infra Hotel</h5>
+                        <p class="card-text">2715 Ash Dr. San Jose, South Dakota</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                      <img src="/img/unsplash8oRCwrBnc.svg" class="card-img-top" alt="...">
+                      <div class="bg-primary text-white text-center py-3"
+                        style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+                        <h5 class="card-title">Wish Stone Building</h5>
+                        <p class="card-text">2972 Westheimer Rd. Santa Ana, Illinois</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                      <img src="/img/unsplashgMes5dNykus.svg" class="card-img-top" alt="...">
+                      <div class="bg-primary text-white text-center py-3"
+                        style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+                        <h5 class="card-title">Mr. Parkinson’s House</h5>
+                        <p class="card-text">3517 W. Gray St. Utica, Pennsylvania</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12 mb-4">
+                    <div class="card h-100">
+                      <img src="/img/unsplashUV81E0oXXWQ.svg" class="card-img-top" alt="...">
+                      <div class="bg-primary text-white text-center py-3"
+                        style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+                        <h5 class="card-title">Oregano Height</h5>
+                        <p class="card-text">2464 Royal Ln. Mesa, New Jersey</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Custom Navigation -->
+            <div class="container my-4">
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-center bg-dark text-white px-3 py-2 rounded"
+                style="max-width: 100%; width: 800px; margin: auto;">
+
+                <!-- Back Button -->
+                <button class="btn btn-dark d-flex align-items-center gap-2 mb-2 mb-md-0"
+                  data-bs-target="#projectCarousel" data-bs-slide="prev">
+                  <span>&larr;</span> Back
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="bg-white d-flex align-items-center gap-2 px-3 py-2 rounded-pill mb-2 mb-md-0">
+                  <div class="rounded-circle bg-primary" style="width: 10px; height: 10px;"></div>
+                  <div class="rounded-circle bg-secondary opacity-25" style="width: 10px; height: 10px;"></div>
+                </div>
+
+                <!-- Next Button -->
+                <button class="btn btn-dark d-flex align-items-center gap-2" data-bs-target="#projectCarousel"
+                  data-bs-slide="next">
+                  Next <span>&rarr;</span>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="text-center fw-bold mb-3">What can we do for you?</h2>
+      <p class="text-center mb-4 fw-semibold">
+        We are ready to work on a project of any complexity, whether it’s commercial or residential.
+      </p>
+
+      <form>
+        <!-- Row 1: Name + Email -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name*" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email*" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Reason + Phone -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <div class="form-group">
+              <select class="form-select" required>
+                <option disabled selected>Reason for Contacting*</option>
+                <option>Commercial Project</option>
+                <option>Residential Project</option>
+                <option>Other Inquiry</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="tel" class="form-control" placeholder="Phone">
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Message -->
+        <div class="mb-3">
+          <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+          <small class="text-danger">*</small> <small class="text-muted">indicates a required field</small>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-5">
+          <button type="submit" class="btn text-white fw-bold px-5 py-2"
+            style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+      <!-- Footer Section -->
+      <div class="bg-light">
+        <div class="container py-5">
+          <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-6">
+              <p><span class="ms-2  fs-5 text-primary"style="background: linear-gradient(to right, #223a98, #455dd4);
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent; 
+                display: inline-block;">ADDRESS:</span> 6391 Elgin St. Celina, Delaware 10299</p>
+
+              <p><span class="ms-2  fs-5 text-primary"style="background: linear-gradient(to right, #223a98, #455dd4);
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent; 
+                display: inline-block;">PHONE:</span> +84 1102 2703</p>
+
+              <p><span class="ms-2 fs-5 text-primary"style="background: linear-gradient(to right, #223a98, #455dd4);
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent; 
+                display: inline-block;">EMAIL:</span> hello@thebox.com</p>
+
+              <div class="d-flex align-items-center">
+                <img src="/img/Group1.svg" width="40" alt="logo">
+                <span class="ms-2 fw-bold fs-5"style="background: linear-gradient(to right, #223a98, #455dd4);
+                  -webkit-background-clip: text; 
+                  -webkit-text-fill-color: transparent; 
+                  display: inline-block;">
+                  <i>The</i>Box</span>
+              </div>
+            </div>
+      
+            <!-- Newsletter and Social -->
+            <div class="col-md-6">
+              <p><span class="ms-2  fs-5 text-primary"style="background: linear-gradient(to right, #223a98, #455dd4);
+               -webkit-background-clip: text; 
+               -webkit-text-fill-color: transparent; 
+               display: inline-block;">NEWSLETTER:</span></p>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Your email here">
+                <button class="btn btn-warning text-white">Subscribe</button>
+              </div>
+              <p><span class="ms-2  fs-5 text-primary"style="background: linear-gradient(to right, #223a98, #455dd4);
+                -webkit-background-clip: text; 
+                -webkit-text-fill-color: transparent; 
+                display: inline-block;">SOCIAL:</span></p>
+              <a href="#" class="me-3">
+                <img src="/img/akariconsfacebookfill.svg" alt="Facebook" width="30">
+              </a>
+              <a href="#" class="me-3">
+                <img src="/img/entyposociallinkedinwithcircle.svg" alt="LinkedIn" width="30">
+              </a>
+              <a href="#">
+                <img src="/img/entyposocialtwitterwithcircle.svg" alt="Twitter" width="30">
+              </a>
+            </div>
+          </div>
+        </div>
+    
+    <div class="bg-primary text-white text-center py-3 mt-4" style="background: linear-gradient(to right, #223a98, #455dd4); border: none;">
+      TheBox Company © 2022. All Rights Reserved
+    </div>
+  </footer>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
