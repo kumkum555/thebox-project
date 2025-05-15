@@ -1,0 +1,80 @@
+$primary:#09094e;
+$accent: #DF6951;
+
+$custom_theme_colors: (
+   "accent": $accent, 
+);
+
+$custom-container-max-widths: (
+  xl: 1150px,
+  xxl: 1232px
+);
+
+$body-color: #FFFFFF;
+
+$font-family-base: "works sans ", serif;
+$headings-color: #181E4B;
+$nav-link-font-weight: 400;
+
+$font-size-base: 1rem;  
+
+
+$h1-font-size:                min(72px, calc($font-size-base + 4.5vw)); // 72px;
+$h2-font-size:                $font-size-base * 2.25;  //36px;
+$h3-font-size:                $font-size-base * 1.5;   //24px;
+$h4-font-size:                $font-size-base * 1.25;  //20px;
+$h5-font-size:                $font-size-base * 1.125; //18px;
+$h6-font-size:                $font-size-base  ;  // 16px;
+
+
+@import '../node_modules/bootstrap/scss/functions';
+
+@import '../node_modules/bootstrap/scss/variables';
+
+
+$container-max-widths: map-merge($map1: $container-max-widths, $map2: $custom-container-max-widths);
+
+$theme_colors: map-merge($map1: $theme_colors, $map2: $custom_theme_colors);
+
+
+
+// Custom Variables
+$card-radius: 2px;
+.our-reputation {
+  background-color: #fff;
+  
+
+  h2 {
+    color: #343a40;
+  
+  }
+
+  .reputation-card {
+    border: 1px solid #e7e7e7;
+    border-radius: $card-radius;
+  
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    h5 {
+      
+      color: #2c2c2c;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #6c757d;
+    }
+
+
+  }
+}
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'header';
+@import 'footer';
+@import 'form';
